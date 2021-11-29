@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,800;1,600&display=swap');
+/* base elements*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "poppins",sans-serif;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: whitesmoke;
+}
+
+h1{
+    font-weight: 800;
+    font-size: 3.6rem;
+    margin: 1.6rem;
+}
+
+h2{
+    font-weight: 800;
+    font-size: 2.4rem;
+    margin: 1.6rem;
+}
+
+p{
+    font-weight: 400;
+    font-size: 1.8rem;
+    margin: 1.6rem;
+}
+
+img{
+    width: auto;
+    height: auto;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    margin: auto;
+}
+
+section{
+    padding: 100px 0 ;
+}
+
+/* Hero section*/
+header{
+    height: 100vh;
+    background:linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.6)),url(images/home.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    color: whitesmoke;
+}
+
+nav{
+    padding: 2% 8%;
+    display:flex;
+    justify-content: space-between;
+}
+
+nav box-icon{
+    display: none;
+}
+
+nav ul{
+    list-style-type: none;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left: 2.5rem;
+}
+
+nav ul li a:hover{
+    color: darkolivegreen;
+    transition:ease-in-out;
+}
+
+.header-content{
+    position:relative;
+    top:5%;
+    left: 6%;
+    right: 6%;
+}
+.column1{
+    position: relative;
+    float: left;   
+    width: 300px;
+    border: 15px solid olive;
+    padding: 20px;
+    margin: 20px;
+}
+.column2{
+    position: relative;
+    float: left;   
+    width: 300px;
+    border: 15px solid olive;
+    padding: 20px;
+    margin: 20px;
+}
+.column3{
+    position: relative;
+    float: left;   
+    width: 300px;
+    border: 15px solid olive;
+    padding: 20px;
+    margin: 20px;
+}
+/*stops the float property from affecting content after the column ns*/
+.column1:after{
+    content: normal;
+    display: table;
+    clear:both;
+}
+
+/*about section*/
+
+.event,
+.when,
+.what{
+    flex-basis: 30%;
+    padding: 1.6rem;
+}
+
+.about2{
+    background-color: #222;
+    color: whitesmoke;
+}
+.abt-right{
+    background-color: #222;
+}
+.abt-left{
+    flex-basis: 50%;
+
+}
+.about2 .card{
+    padding: 3rem 8rem;
+    color: #222;
+    background-color: #dcdcdc;
+    margin: 1.6rem;
+    text-align: center;
+}
+/* action-plan */
+.action-plan .row{
+
+    justify-content: center;
+}
+
+.action-content{
+    margin-top: 100px;
+}
+.progress-bar{
+    width: 80%;
+    height: 2px;
+    background-color: olive;
+    margin: auto;
+    position: relative;
+}
+
+.progress-bar .c1,
+.progress-bar .c2,
+.progress-bar .c3{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: olive;
+    position: absolute;
+}
+.progress-bar .c1{
+    top: -8px;
+    left: 50px;
+}
+.progress-bar .c2{
+    top: -8px;
+    left: 50%;
+}
+.progress-bar .c3{
+    top: -8px;
+    right: 50px;
+}
+
+.box1,
+.box2,
+.box3 {
+    padding: 1.8rem;
+}
+.action-plan .box2 {
+    text-align: center;
+}
+.action-plan .box3 {
+    text-align: right;
+}
+.action-content h2{
+    color: darkslategray;
+}
+
+/* container holding image and text */
+.container{
+    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* bottom right text */
+.container .content{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(0,0,0);
+    background: rgba(0,0,0,0.5);
+    color: darkgrey;
+    width: 100%;
+    padding: 20px;
+}
+.info{
+    text-align: center;
+    padding-bottom: 30px;
+    margin-right: 180px;
+    margin-left: 180px;
+    color: whitesmoke;
+    background-color: gray;
+    
+}
+.card-text p {
+    margin-bottom: 0;
+}
+.fund-card {
+    text-align: center;
+    padding-bottom: 30px;
+    margin-right: 180px;
+    margin-left: 180px;
+    color: whitesmoke;
+    background-color: darkslategray;
+}
+
+/* gallery */
+.gal-content{
+    width: 100%;
+    min-height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 50px 8%;
+}
+.gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 10px;
+}
+.gallery img{
+    width: 100%;
+}
+.quote{
+    text-align: center;
+    padding-bottom: 30px;
+    
+    color: olivedrab;
+}
+/* footer */
+.footer{
+    padding:40px 0;
+    background-color: black;
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color: olive;
+}
+.footer .social a{
+    font-size: 24px;
+    color: inherit;
+    border: 1px solid #ccc;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+     margin: 0 8px;
+}
+.footer .email p{
+    opacity: 0.8;
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    color: olive;
+    line-height: 1.6;
+    text-align: center;
+
+}
+.footer .ph p{
+    opacity: 0.8;
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    color: olive;
+    line-height: 1.6;
+    text-align: center;
+}
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 13px;
+    color: #aaa;
+}
+
+
+
+
+
+/*media queries*/
+
+@media only screen and (max-width:768px){
+    .row{
+        flex-direction: column;
+    }
+    header{
+        height: 225vh;
+        width: auto;
+        
+    }
+    nav{
+        flex-direction: column;
+        position: relative;
+    }
+    nav box-icon{
+        display: block;
+        position: absolute;
+        top: 18px;
+        right: 32px;
+    }
+    nav ul{
+        background-color: whitesmoke;
+        display: none;
+    }
+    .showmenu{
+        display: block;
+    }
+    nav ul li{
+        display: block;
+        padding: 2% 0;
+    }
+    nav ul li a{
+        color: #222;
+    }
+   .header-content{
+        flex-direction:column;
+
+    }
+
+    /* progress-bar */
+    .progress-bar{
+        display: none;
+    }
+    .action-content{
+        margin-top: 20px;
+    }
+    .action-plan .box1,
+    .action-plan .box2,
+    .action-plan .box3{
+         text-align: center;
+    }
+    /* container with image and text */
+    .container img{
+        height: 110vh;
+        width: auto;
+    }
+
+    /* fund */
+    .info{
+        margin-right: 0px;
+        margin-left: 0px;
+        
+    }
+    .fund-card {
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media (max-height:800px){
+    footer{
+        position: static;
+    }
+}
