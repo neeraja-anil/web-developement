@@ -157,6 +157,9 @@ nav ul li a:hover{
 
     justify-content: center;
 }
+.action-plan .row h1{
+    color: black;
+}
 
 .action-content{
     margin-top: 100px;
